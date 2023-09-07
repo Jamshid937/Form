@@ -7,25 +7,41 @@
     display: flex;
 gap: 10px;
 flex-direction: column;
+  justify-content: center;
+  height: 50%; 
+border-radius: 30.538px;
+/* border: 5.09px solid var(--neutral-300, #EFF0F6); */
+background: rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(25.448572158813477px);
+padding: 30px;
 }
 
     .form{
     height: 100vh;
+    width: 100vw;
+    background-position: center;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url('../../imgs/logo.png');
+    background-repeat: no-repeat;
+    
+    background-size: 70%;
     }
     .validate__form>input{
-    padding: 5px 8px;
-    border-radius: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
     outline: none;
-    box-shadow: 5px 5px 5px 0px;
+    min-width: 200px;
+  
     }
     .validate__form>button{
     background-color: beige;
-    padding: 5px 0;
+    padding: 15px 0;
+    color: white;
     border-radius: 5px;
-    }
-    body{
-    background-color: aqua;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(25px);
     }

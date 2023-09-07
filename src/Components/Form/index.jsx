@@ -15,7 +15,12 @@ const Form = () => {
     const [error, setError] = useState({})
   
     const handleChange = (e) => {
+       
      const {name, value} = e.target
+     if(e.target.name === tell){
+        e.target.value.replace(/[^0-9]/g, "");
+    }
+     
      setFields({
         ...fields, [name] : value
     })
@@ -89,10 +94,12 @@ const Form = () => {
   };
   return (
     <div className={classes['form']}>
+        
                 <form className={classes['validate__form']} onSubmit={sendtelegram}>
                  <input type="text" value={fields.name}  onChange={handleChange} name='name' placeholder='Ismingiz'  required/>
                  {error.name && <span className={classes['validate__form__span']}>{error.name}</span>}
-                 <input
+                 <input 
+                  type='tel'
                      value={fields.tell}
                      name='tell'
                      onChange={handleChange}
