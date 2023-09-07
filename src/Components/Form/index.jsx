@@ -54,7 +54,7 @@ const Form = () => {
       };
   
   
-  
+     
   
   e.preventDefault()
   const fieldsEror = {}
@@ -64,7 +64,7 @@ const Form = () => {
   
   if(!fields.tell.trim()){
   fieldsEror.tell = 'tell is required'
-  } else if(!/^(\+998\d{9})$/.test(fields.tell)){
+  } else if(!/^(\+998\d{9})$/.test(fields.tell) ){
     fieldsEror.tell = 'telefon raqamingizni to`liq kiriting'
   }
   if(!fields.text.trim()){
@@ -103,6 +103,7 @@ const Form = () => {
                      value={fields.tell}
                      name='tell'
                      onChange={handleChange}
+                     maxLength={12}
                         required 
                         placeholder='tell raqamingiz'
                         />
