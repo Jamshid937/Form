@@ -17,8 +17,6 @@ const Form = () => {
     const handleChange = (e) => {
        
      const {name, value} = e.target
-
-     
      setFields({
         ...fields, [name] : value
     })
@@ -94,6 +92,7 @@ const Form = () => {
     <div className={classes['form']}>
         
                 <form className={classes['validate__form']} onSubmit={sendtelegram}>
+                    <h2>Xush kelibsiz</h2>
                  <input type="text" value={fields.name}  onChange={handleChange} name='name' placeholder='Ismingiz'  required/>
                  {error.name && <span className={classes['validate__form__span']}>{error.name}</span>}
                  <input 
