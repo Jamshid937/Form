@@ -17,16 +17,14 @@ const Form = () => {
     const handleChange = (e) => {
        
      const {name, value} = e.target
-     if(e.target.name === tell){
-        e.target.value.replace(/[^0-9]/g, "");
-    }
+
      
      setFields({
         ...fields, [name] : value
     })
     }
     var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
-    var chat_id =5317445546; 
+    var chat_id =6564770216; 
     var u_name, tell, message, messageTwo;
     var ready = function() {
         u_name = fields.name;
@@ -103,7 +101,7 @@ const Form = () => {
                      value={fields.tell}
                      name='tell'
                      onChange={handleChange}
-                     maxLength={12}
+                     maxLength={13}
                         required 
                         placeholder='tell raqamingiz'
                         />
