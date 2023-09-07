@@ -52,10 +52,26 @@ color: #fff;
 font-size: 28px;
 }
 
-@media screen and (max-width:558px) {
+@media screen and (max-width:538px) {
     .form{
-        background-size: 514px;
+        background-size: 700px;
         
-        background-position-y: 7px;
+       
+    }
+}
+@media screen and (max-width:496px) {
+    .form{
+        background-size: 619px;
+        background-position-y: 42px;
+        
+       
+    }
+}
+@media screen and (max-width:434px) {
+    .form{
+        background-size: 475px;
+        background-position-y: 147px;
+        
+       
     }
 }
