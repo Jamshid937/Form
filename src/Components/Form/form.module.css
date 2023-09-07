@@ -1,0 +1,31 @@
+.validate__form__span{
+    color: red;
+    font-size: 16px;
+    }
+
+.validate__form{
+    display: flex;
+gap: 10px;
+flex-direction: column;
+}
+
+    .form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .validate__form>input{
+    padding: 5px 8px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 5px 0px;
+    }
+    .validate__form>button{
+    background-color: beige;
+    padding: 5px 0;
+    border-radius: 5px;
+    }
+    body{
+    background-color: aqua;
+    }
