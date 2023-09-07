@@ -22,7 +22,7 @@ const Form = () => {
     })
     }
     var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
-    var chat_id =6564770216; 
+    var chat_id =5317445546; 
     var u_name, tell, message, messageTwo;
     var ready = function() {
         u_name = fields.name;
